@@ -20,7 +20,7 @@
   subword-nmt learn-bpe -s 3000 < extract.full > extract.bpe
   subwrod-nmt apply-bpe -c extract.bpe < extract.full > subword_extract.bpe
   ```
-4. Remove useless spaces with remove_space.py
-5. Combine the English sentences with the Japanese bped sentences with form.py
+4. Remove useless spaces from Japanese bpe sentences file with remove_space.py
+5. Combine the English sentences file with the Japanese bped sentences file with form.py
 
   
