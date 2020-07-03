@@ -1,7 +1,7 @@
 import os
 
 with open('ns_subword_extract.bpe') as ja:
-    with open('extract_en.raw') as en:
+    with open('subword_extract_en.bpe') as en:
         with open('tedcorpus.bpe.3000.en-ja', 'w') as ted:
             ja_lines = ja.readlines()
             en_lines = en.readlines()
