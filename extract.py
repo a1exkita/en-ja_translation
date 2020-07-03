@@ -21,7 +21,7 @@ import xml.etree.ElementTree as ET
 #             continue
 
 with open('extract.raw', 'w') as output:
-    for filename in sorted(os.listdir('./')):
+    for filename in sorted(os.listdir('./en-ja')):
         if filename.endswith('ja.xml'):
             tree_ja = ET.parse(filename)
             root_ja = tree_ja.getroot()
@@ -30,7 +30,7 @@ with open('extract.raw', 'w') as output:
                     print(sentence.text, file=output)
 
 with open('extract_en.raw', 'w') as output:
-    for filename in sorted(os.listdir('./')):
+    for filename in sorted(os.listdir('./en-ja')):
         if filename.endswith('en.xml'):
             tree_ja = ET.parse(filename)
             root_ja = tree_ja.getroot()
