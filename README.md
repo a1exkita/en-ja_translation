@@ -1,6 +1,6 @@
 # en-ja
 
-## procedure
+## 🚀 procedure
 1. Extract Japanese and English sentences from xml files with extract.py
 2. Do word segmentation for Japanese sentences by using Kytea
   ```
