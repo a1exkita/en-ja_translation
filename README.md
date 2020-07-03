@@ -23,7 +23,7 @@
   subword-nmt learn-bpe -s 3000 < extract.full > extract.bpe
   subwrod-nmt apply-bpe -c extract.bpe < extract.full > subword_extract.bpe
   ```
-    - To check if it is applied,
+  - To check if it is applied,
   ```
   python check_bpe.py input output
   ```
