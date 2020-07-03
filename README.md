@@ -14,13 +14,18 @@
   make
   make install
   kytea --help # make sure it is installed
+  
   kytea < extract.raw > extract.full -notags -nounk
   ```
 3. Apply bpe to Japanese sentences by using subword-nmt
   ```
   pip install subword-nmt
+  
   subword-nmt learn-bpe -s 3000 < extract.full > extract.bpe
   subwrod-nmt apply-bpe -c extract.bpe < extract.full > subword_extract.bpe
+  
+  subword-nmt learn-bpe -s 3000 < extract_en.raw > extract_en.bpe
+  subword-nmt apply-bpe -c extract_en.bpe < extract_en.raw > subword_extract_en.bpe
   ```
   - To check if it is applied,
   ```
