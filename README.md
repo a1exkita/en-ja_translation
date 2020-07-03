@@ -1,4 +1,4 @@
-# en-ja
+# English-Japanese Translation
 
 ## 🚀 procedure
 1. Extract Japanese and English sentences from xml files with extract.py
