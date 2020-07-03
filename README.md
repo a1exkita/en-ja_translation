@@ -1,7 +1,7 @@
 # English-Japanese Translation
 
 ## 🚀 Procedure
-0. Download [TED] corpus
+0. Download [TED] corpus and put "en-ja" file to the root directory
 [TED]: https://wit3.fbk.eu/archive/2017-01-trnted//texts/en/ja/en-ja.tgz
 1. Extract Japanese and English sentences from xml files with extract.py
     - generates extract.raw and extract_en.raw
